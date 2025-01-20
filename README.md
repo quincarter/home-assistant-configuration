@@ -2,6 +2,10 @@
 
 Hello There! I have been getting requests to expose my dashboards to the public for viewing. Well in this repo you will find my [raw-configuration](./raw-configuration.yaml) with a bunch of stuff ripped out of it for PII reasons.
 
+## Live Demo
+
+Those that want to see a visual - Click [here](https://photos.app.goo.gl/ARhj3e4pBj2PvSt68)(Google Photos Album) to see the Live Demo
+
 ## Quick Notes
 
 The top 25% of the dashboard consists of very useful information for our household to show things that need to be acted on, or information about what is happening in the house (doors unlocked/opened, media playing, Vacuum running, Washer running, etc).
@@ -17,10 +21,6 @@ I have grouped lights and switches using the `Helpers > Group > Light Group` wit
 ![living-room](./screenshots/living-room.png)
 
 The horizontal flow at the bottom of the page is part of the [Bubble Card](https://github.com/quincarter/home-assistant-configuration?tab=readme-ov-file#bubble-card) integration. Each room can potentially have a motion sensor attached to it so that the buttons will rearrange themselves when they are occupied.
-
-## Live Demo
-
-Click [here](https://photos.app.goo.gl/ARhj3e4pBj2PvSt68)(Google Photos Album) to see the Live Demo
 
 ## Integrations/Addons
 
