@@ -16,7 +16,7 @@ I have grouped lights and switches using the `Helpers > Group > Light Group` wit
 
 ![living-room](./screenshots/living-room.png)
 
-The horizontal flow at the bottom of the page is part of the [Bubble Card](./README.md#bubble-card) integration. Each room can potentially have a motion sensor attached to it so that the buttons will rearrange themselves when they are occupied.
+The horizontal flow at the bottom of the page is part of the [Bubble Card](https://github.com/quincarter/home-assistant-configuration?tab=readme-ov-file#bubble-card) integration. Each room can potentially have a motion sensor attached to it so that the buttons will rearrange themselves when they are occupied.
 
 ## Live Demo
 
