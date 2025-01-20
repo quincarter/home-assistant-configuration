@@ -2,6 +2,14 @@
 
 Hello There! I have been getting requests to expose my dashboards to the public for viewing. Well in this repo you will find my [raw-configuration](./raw-configuration.yaml) with a bunch of stuff ripped out of it for PII reasons.
 
+## Quick Notes
+
+The top 25% of the dashboard consists of very useful information for our household to show things that need to be acted on, or information about what is happening in the house (doors unlocked/opened, media playing, Vacuum running, Washer running, etc).
+
+Below that, Rooms become the basis of this dashboard. It gives a great virtual feel of being in the room itself. Each set of rooms is contained by a floor. I have grouped lights and switches using the `Helpers > Group > Light Group` with like `All Main Floor Lights` or `All Basement Lights`. Then Each room has a light group itself (very much like google/alexa handle area grouping - I tried to mimic that) so `Office Lights` would be a group of all the lights in the office. Or `Kitchen Lights` would be the 4 lights we have in the kitchen.
+
+The horizontal flow at the bottom of the page is part of the [Bubble Card](./README.md#bubble-card) integration. Each room can potentially have a motion sensor attached to it so that the buttons will rearrange themselves when they are occupied.
+
 ## Live Demo
 
 Click [here](https://photos.app.goo.gl/ARhj3e4pBj2PvSt68)(Google Photos Album) to see the Live Demo
