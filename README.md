@@ -6,7 +6,14 @@ Hello There! I have been getting requests to expose my dashboards to the public 
 
 The top 25% of the dashboard consists of very useful information for our household to show things that need to be acted on, or information about what is happening in the house (doors unlocked/opened, media playing, Vacuum running, Washer running, etc).
 
-Below that, Rooms become the basis of this dashboard. It gives a great virtual feel of being in the room itself. Each set of rooms is contained by a floor. I have grouped lights and switches using the `Helpers > Group > Light Group` with like `All Main Floor Lights` or `All Basement Lights`. Then Each room has a light group itself (very much like google/alexa handle area grouping - I tried to mimic that) so `Office Lights` would be a group of all the lights in the office. Or `Kitchen Lights` would be the 4 lights we have in the kitchen.
+![top-part](./screenshots/top-of-dash.png)
+Below that, Rooms become the basis of this dashboard. It gives a great virtual feel of being in the room itself. Each set of rooms is contained by a floor. 
+
+![rooms](./screenshots/rooms.png)
+
+I have grouped lights and switches using the `Helpers > Group > Light Group` with like `All Main Floor Lights` or `All Basement Lights`. Then Each room has a light group itself (very much like google/alexa handle area grouping - I tried to mimic that) so `Office Lights` would be a group of all the lights in the office. Or `Kitchen Lights` would be the 4 lights we have in the kitchen.
+
+![living-room](./screenshots/living-room.png)
 
 The horizontal flow at the bottom of the page is part of the [Bubble Card](./README.md#bubble-card) integration. Each room can potentially have a motion sensor attached to it so that the buttons will rearrange themselves when they are occupied.
 
@@ -39,17 +46,17 @@ Click [here](https://photos.app.goo.gl/ARhj3e4pBj2PvSt68)(Google Photos Album) t
 [![Open Bubble Card on Home Assistant Community Store (HACS).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=clooos&repository=Bubble-Card&category=frontend)
 
 #### Mini Media Player
+
 ![Preview Image](https://user-images.githubusercontent.com/457678/47517460-9282d600-d888-11e8-9705-cf9ec3698c3c.png)
 
 [![Open Mini Media Player on Home Assistant Community Store (HACS).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=kalkih&repository=mini-media-player&category=frontend)
 
 #### Atomic Calendar Revive
 
-| Event Mode | Calendar Mode |
-| ------------- | ---------- |
+| Event Mode                                                                                                                             | Calendar Mode                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/event-mode-example.png" width="300"/> | <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/calendar-mode-allday.png" width="300"/> |
-| <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/event-mode-no-date.png" width="300"/> | <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/calendar-mode-today.png" width="300"/> |
-
+| <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/event-mode-no-date.png" width="300"/> | <img src="https://raw.githubusercontent.com/totaldebug/atomic-calendar-revive/master/.github/img/calendar-mode-today.png" width="300"/>  |
 
 [![Open Atomic Calendar Revive on Home Assistant Community Store (HACS).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=totaldebug&repository=atomic-calendar-revive&category=frontend)
 
