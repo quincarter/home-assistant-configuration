@@ -7,6 +7,7 @@ Hello There! I have been getting requests to expose my dashboards to the public 
 The top 25% of the dashboard consists of very useful information for our household to show things that need to be acted on, or information about what is happening in the house (doors unlocked/opened, media playing, Vacuum running, Washer running, etc).
 
 ![top-part](./screenshots/top-of-dash.png)
+
 Below that, Rooms become the basis of this dashboard. It gives a great virtual feel of being in the room itself. Each set of rooms is contained by a floor. 
 
 ![rooms](./screenshots/rooms.png)
