@@ -1,0 +1,32 @@
+- platform: template
+  covers:
+    garage_door:
+      device_class: garage
+      friendly_name: "Garage Door"
+      value_template: "{{ states('cover.ratgdo32disco_cdea6c_door') }}"
+      open_cover:
+        - condition: state
+          entity_id: cover.ratgdo32disco_cdea6c_door
+          state: "closed"
+        - service: cover.open_cover
+          target:
+            entity_id: cover.ratgdo32disco_cdea6c_door
+      close_cover:
+        - condition: state
+          entity_id: cover.ratgdo32disco_cdea6c_door
+          state: "open"
+        - service: cover.close_cover
+          target:
+            entity_id: cover.ratgdo32disco_cdea6c_door
+      stop_cover:
+        service: cover.stop_cover
+        target:
+          entity_id: cover.ratgdo32disco_cdea6c_door
+      icon_template: >-
+        {% if is_state('cover.ratgdo32disco_cdea6c_door', 'opening') or is_state('cover.ratgdo32disco_cdea6c_door', 'closing') %}
+          mdi:garage-alert-variant
+        {% elif is_state('cover.ratgdo32disco_cdea6c_door', 'open') %}
+          mdi:garage-open-variant
+        {% else %}
+          mdi:garage-variant
+        {% endif %}

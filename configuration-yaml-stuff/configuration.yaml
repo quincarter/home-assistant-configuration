@@ -1,0 +1,57 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+# default_config:
+# media_source:
+# logbook: # commented this out - i don't use it but some may use it.
+my:
+input_button:
+history:
+energy:
+input_select:
+assist_pipeline:
+schedule:
+stream:
+conversation:
+counter:
+cloud:
+  google_actions: !include google-assistant-cloud.yaml
+
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+group: !include groups.yaml
+alarm_control_panel: !include alarm_control_panel.yaml
+
+template: !include templates.yaml
+cover: !include covers.yaml
+
+homeassistant:
+  packages: !include_dir_named packages
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+spotcast:
+  sp_dc: !secret person1_sp_dc
+  sp_key: !secret person1_sp_key
+  accounts:
+    person1:
+      sp_dc: !secret person1_sp_dc
+      sp_key: !secret person1_sp_key
+    person2:
+      sp_dc: !secret person2_sp_dc
+      sp_key: !secret person2_sp_key
+    kid:
+      sp_dc: !secret kid_sp_dc
+      sp_key: !secret kid_sp_key
+
+media_player:
+  - platform: emby
+    host: 192.168.1.xxx
+    api_key: asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf
+  - platform: webrtc
+    name: Dummy camera
+    stream: some_stream
+    audio: pcmu/48000
